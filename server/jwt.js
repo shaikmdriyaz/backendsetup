@@ -10,11 +10,14 @@ function encryptData() {
 
     console.log(encryptMessage);
 }
-//encryptData();
+encryptData();
 
 function decryptData() {
     let encryptText =
-    "past the text here"
+    "paste the encryted text here"
+    // example : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZXNzYWdlIjoi
+    // R0xPQkFMIGlzIGEgY29sbGFnZSIsImlhdCI6MTc1NTE4NjgzNSwiZXhwIjoxNzU
+    // 1MTg2ODk1fQ.3h_fMYMrJsYEWVdVeiYy2GeBWhd-HfTR4KItPPksAns
     let deryptedText = jwt.verify(encryptText, "12345");
     console.log(deryptedText);
 
